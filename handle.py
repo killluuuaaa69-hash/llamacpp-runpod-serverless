@@ -55,8 +55,8 @@ def handler(event):
     if "stats" in inp:
         return get_model_stats()
     
-    if "del_model" in inp:
-        model_name = inp.get("get_model")
+    if "delete_model" in inp:
+        model_name = inp.get("delete_model")
         return delete_model(model_name)
     
     if "get_model"  in inp:
